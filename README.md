@@ -1,7 +1,7 @@
 # ShapeEst3D
 Estimating true crystal shape from two-dimensional cut sections
 
-Clone the files in this [ShapeEst3D](https://github.com/lj201112/ShapeEst3D) repository, and run main.py to start the program. The user should have Python installed. 
+Clone all files in this [ShapeEst3D](https://github.com/lj201112/ShapeEst3D) repository, and run main.py to start the program. The user should have Python installed. 
 
 The program is written in pure Python with Numpy, Scipy, Pandas, Matplotlib and Numba. The program is only tested on Win7 but should also works on other system which supports Python and its libs.
 
