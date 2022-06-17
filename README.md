@@ -5,7 +5,7 @@ Download all the files in https://github.com/lj201112/ShapeEst3D, and run main.p
 
 The file "run.bat" can be used for executing portable Python. `path=%~dp0\Python\python-3.8.7.amd64` means the Python script .exe locates at `./Python\python-3.8.7.amd64`, and the current dir is where the .bat is. The user can directly run `main.py` if Python is in the system environment variables.
 
-About "config.ini":
+## About "config.ini":
 
 This configuration file allows the user to customize how to execute the python file. The program will generate and execute the temporary Python file named `find_R_squared_shape.py` when estimating multiple crystal shapes. Then the `config.ini` file is for configuring how to run the temporary file. The content of the configuration file:
 
