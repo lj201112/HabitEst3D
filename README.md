@@ -18,5 +18,5 @@ python_loc =
 ```
 For example, when python_env is set to `python3`, the command `python3 find_R_squared_shape.py` will be executed, and the default value is `python` if left blank. `python_loc` is the location of the python .exe. If your file path is `C:\Python\python.exe`, then `python_loc = C:\Python\python.exe` , the command `C:\Python\python.exe find_R_squared_shape.py` will be executed. The priority of `python_loc` is higher than `python_env`, and `python_env` only works when `python_loc` is empty.
 
-The program is carefully tested and if you have any question, please let me know. :)
+The program has been carefully tested. If you have any questions, please let me know. :)
 
