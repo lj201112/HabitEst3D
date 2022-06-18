@@ -3,7 +3,7 @@ Estimating true crystal shape from two-dimensional cut sections
 
 Clone all files in this [ShapeEst3D](https://github.com/lj201112/ShapeEst3D) repository, and run main.py to start the program. The user should have Python installed or use [portable Python](https://github.com/codrsquad/portable-python). 
 
-The program is written in Python with Numpy, Scipy, Pandas, Matplotlib, and Numba. The program is in Python3.8 but only uses common functions in the libs mentioned above and maybe works with lower Python versions. The program is only tested on Win7 but should also work on other systems which support Python and its libs. 
+The program is written in Python with Numpy, Scipy, Pandas, Matplotlib, and Numba. It is in Python3.8 but only uses common functions in the libs mentioned above and maybe works with lower Python versions. The program is only tested on Win7 but should also work on other systems which support Python and its libs. 
 
 The file "run.bat" can be used for executing portable Python. `path=%~dp0\Python\python-3.8.7.amd64` means the Python script .exe locates at `./Python\python-3.8.7.amd64`, and the current dir is where the .bat is. The user can directly run `main.py` if Python is in the system environment variables.
 
