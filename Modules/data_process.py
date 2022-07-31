@@ -1,20 +1,20 @@
 """
 Copyright (C) 2022, Jie Li
 
-This file is part of ShapeEst3D
+This file is part of HabitEst3D
 
-ShapeEst3D is free software: you can redistribute it and/or modify
+HabitEst3D is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-ShapeEst3D is distributed in the hope that it will be useful,
+HabitEst3D is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with ShapeEst3D.  If not, see <https://www.gnu.org/licenses/>.
+along with HabitEst3D.  If not, see <https://www.gnu.org/licenses/>.
     
 Author: Jie Li <lj201112@163.com>, Feb. 2019, modefied on March 2021.
 License: GPL v 3
