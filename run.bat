@@ -1,7 +1,7 @@
 @echo off
 echo Welcome...
 echo.
-echo This program is used for reconstructing a 3D crystal shape from a set of 2D crystal sections by statistical method.
+echo This program is used for reconstructing a 3D crystal habit from a set of 2D crystal sections by statistical method.
 echo.
 echo Close this window to terminate the program.
 echo.
