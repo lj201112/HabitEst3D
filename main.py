@@ -3,7 +3,7 @@ Copyright (C) 2022, Jie Li
 
 This file is part of ShapeEst3D
 
-ShapeEst3D is free software: you can redistribute it and/or modify
+HabitEst3D is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -15,8 +15,10 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with ShapeEst3D.  If not, see <https://www.gnu.org/licenses/>.
-    
-Author: Jie Li <lj201112@163.com>, Feb. 2021, modefied on July 2021, March 2022.
+
+Change ShapeEst3D to HabitEst3D
+
+Author: Jie Li <lj201112@163.com>, Feb. 2021, modefied on July 2021, March 2022, July 2022.
 License: GPL v 3
 """
 #  -*- coding: utf-8 -*-
@@ -58,7 +60,7 @@ class ShapeEstimation:
         top.minsize(116, 1)
         top.maxsize(1924, 1062)
         top.resizable(1,  1)
-        top.title("ShapeEst3D")
+        top.title("HabitEst3D")
         top.configure(background="#d9d9d9")
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
@@ -85,10 +87,10 @@ class ShapeEstimation:
         self.notes_text.configure(selectbackground="blue")
         self.notes_text.configure(selectforeground="white")
         self.notes_text.configure(wrap="word")
-        self.notes_text.insert(tk.END,'Welcome ...\n\nThis program is used to estimate 3D crystal shape from a set of 2D sections by statistical methods.\n=========================')
+        self.notes_text.insert(tk.END,'Welcome ...\n\nThis program is used to estimate 3D crystal habit from a set of 2D sections by statistical methods.\n=========================')
         self.notes_text.see(tk.END)
         # self.notes_text.configure(state='normal')       
-        self.notes_text.insert(tk.END,'\n'+'Single shape estimation activated')
+        self.notes_text.insert(tk.END,'\n'+'Single habit estimation activated')
         self.notes_text.insert(tk.END,'\n'+'---------------------------\n')
         self.notes_text.see(tk.END)
         self.notes_text.configure(state='disable')  
@@ -121,7 +123,7 @@ class ShapeEstimation:
         self.single_shape_button.configure(highlightbackground="#d9d9d9")
         self.single_shape_button.configure(highlightcolor="black")
         self.single_shape_button.configure(pady="0")
-        self.single_shape_button.configure(text='Single shape')
+        self.single_shape_button.configure(text='Single habit')
 
         self.multiple_shapes_button = tk.Button(self.menu_frame,command=self.load_opration_multi)
         self.multiple_shapes_button.place(relx=0.343, rely=0.125, height=30, width=100)
@@ -134,7 +136,7 @@ class ShapeEstimation:
         self.multiple_shapes_button.configure(highlightbackground="#d9d9d9")
         self.multiple_shapes_button.configure(highlightcolor="black")
         self.multiple_shapes_button.configure(pady="0")
-        self.multiple_shapes_button.configure(text='Multiple Shapes')
+        self.multiple_shapes_button.configure(text='Multiple Habits')
         
         # add message // To do
         self.about_button = tk.Button(self.menu_frame,command=self.about)
@@ -860,7 +862,7 @@ class ShapeEstimation:
         
         self.notes_text.configure(state='normal')
         self.notes_text.see(tk.END)             
-        self.notes_text.insert(tk.END,'Single shape estimation activated')
+        self.notes_text.insert(tk.END,'Single habit estimation activated')
         self.notes_text.insert(tk.END,'\n'+'---------------------------\n')
         self.notes_text.see(tk.END)
         self.notes_text.configure(state='disable')  
@@ -878,7 +880,7 @@ class ShapeEstimation:
         
         self.notes_text.configure(state='normal')
         self.notes_text.see(tk.END)             
-        self.notes_text.insert(tk.END,'Multiple shapes estimation activated')
+        self.notes_text.insert(tk.END,'Multiple habits estimation activated')
         self.notes_text.insert(tk.END,'\n'+'---------------------------\n')
         self.notes_text.see(tk.END)
         self.notes_text.configure(state='disable')  
@@ -1563,11 +1565,11 @@ class ShapeEstimation:
         
         if self.shape_num_to_calc > 3:
             self.notes_text.insert(tk.END,'\n'+'********* Warning *********')
-            self.notes_text.insert(tk.END,'\n'+'Estimation of shapes more than 3 may take a long time.')
+            self.notes_text.insert(tk.END,'\n'+'Estimation of habits more than 3 may take a long time.')
             self.notes_text.insert(tk.END,'\n'+'*****************************')   
         if self.shape_num_to_calc < 2:
             self.notes_text.insert(tk.END,'\n'+'***************************')
-            self.notes_text.insert(tk.END,'\n'+'Shape num should be no less than 2. Or use single shape mode instead. The shape num is set to 2.')
+            self.notes_text.insert(tk.END,'\n'+'Habit num should be no less than 2. Or use single habit mode instead. The habit num is set to 2.')
             self.notes_text.insert(tk.END,'\n'+'***************************')
             self.shape_num_to_calc = 2
             #self.shape_num_spin_multi_value = 2
@@ -1577,7 +1579,7 @@ class ShapeEstimation:
         # self.notes_text.insert(tk.END,'\n'+'Repeat times --> {0}'.format(self.repeat_times_to_calc))
         if self.method_multi_value.get() == 'histogram':
             self.notes_text.insert(tk.END,'\n'+'Bin numbers of the histogram --> {0}'.format(self.hist_bin_num_to_calc))
-        self.notes_text.insert(tk.END,'\n'+'Number of shapes --> {0}'.format(self.shape_num_to_calc))
+        self.notes_text.insert(tk.END,'\n'+'Number of habits --> {0}'.format(self.shape_num_to_calc))
         #self.notes_text.insert(tk.END,'\n'+'Step size --> {0}'.format(self.step_size_to_calc))
         self.notes_text.insert(tk.END,'\n'+'Top [{0}] best-match results will be selected'.format(self.best_match_to_calc))
         
