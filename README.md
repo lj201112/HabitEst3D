@@ -1,7 +1,7 @@
-# ShapeEst3D
-Estimating true crystal shape from two-dimensional cut sections
+# HabitEst3D
+Estimating true crystal habit from two-dimensional cut sections
 
-Clone all files in this [ShapeEst3D](https://github.com/lj201112/ShapeEst3D) repository, and run main.py to start the program. The user should have Python installed or use [portable Python](https://github.com/codrsquad/portable-python). 
+Clone all files in this [HabitEst3D](https://github.com/lj201112/HabitEst3D) repository, and run main.py to start the program. The user should have Python installed or use [portable Python](https://github.com/codrsquad/portable-python). 
 
 The program is written in Python with Numpy, Scipy, Pandas, Matplotlib, and Numba. It is in Python3.8 but only uses common functions in the libs mentioned above and maybe works with lower Python versions. The program is only tested on Win7 but should also work on other systems which support Python and its libs. 
 
@@ -9,7 +9,7 @@ The file "run.bat" can be used for executing portable Python. `path=%~dp0\Python
 
 ## About "config.ini"
 
-This configuration file allows the user to customize how to execute the python file. The program will generate and execute the temporary Python file named `find_R_squared_shape.py` when estimating multiple crystal shapes. Then the `config.ini` file is for configuring how to run the temporary file. The content of the configuration file:
+This configuration file allows the user to customize how to execute the python file. The program will generate and execute the temporary Python file named `find_R_squared_shape.py` when estimating multiple crystal habits. Then the `config.ini` file is for configuring how to run the temporary file. The content of the configuration file:
 
 ```bat
 [config]  
